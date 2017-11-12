@@ -1,0 +1,121 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #f9fcfe;
+    overflow: hidden;
+    position: relative;
+}
+
+/* General - END */
+
+
+
+/* Side menu */
+
+#side-menu {
+    height: 100vh;
+    width: 160px;
+    background-color: rgba(9, 155, 54, 0.7);
+    box-shadow: -4px 0px 8px -1px rgba(0,0,0,0.1);
+    position: fixed;
+    right: 0;
+    z-index: 100;
+}
+
+#side-menu .side-menu-item {
+    display: block;
+    padding-top: 70%;
+    margin-left: -20%;
+    margin-right: 10%;
+}
+
+#side-menu .side-menu-item .side-menu-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    padding: 10%;
+    transition: all 0.1s ease-out;
+}
+
+#side-menu .side-menu-item .side-menu-btn:hover {
+    background-color: #fff;
+    color: rgba(9, 155, 54, 0.7);
+}
+
+#side-menu .side-menu-item .side-menu-btn::before {
+    content: "";
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    border-left: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,.1);
+    transition: all 0.1s ease-out;
+}
+
+#side-menu .side-menu-item .side-menu-btn::after {
+    content: "";
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    border-right: 2px solid rgba(255, 255, 255, 0.7);
+    transition: all 0.1s ease-out;
+}
+
+#side-menu .side-menu-item .side-menu-btn:hover::before,
+#side-menu .side-menu-item .side-menu-btn:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+#to-the-top {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-left: 25%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 45px;;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    transition: all 0.1s ease-out;
+}
+
+#to-the-top:hover {
+    background-color: #fff;
+    color: rgba(9, 155, 54, 0.7);
+}
+
+/* Side menu - END */
+
+
+
+/* Main header */
+
+
+
+/* Main header - END */
